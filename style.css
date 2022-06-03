@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --brightest-blue: hsl(245, 75%, 52%, 0.6);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --white: white;
+}
+
+body {
+    background-color: var(--pale-blue);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.flex-container{    
+    background-color: var(--white);
+    border-radius: 20px;
+    margin: 1.3rem;
+    width: 450px;
+    box-shadow: inset 0 3em 3em rgba(0,0,0,0.1),
+    0 0.3em 3em rgba(0,0,0,0.3);
+}
+
+.hero img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.texto h1{
+    font-weight: 900;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+.texto p{
+    font-weight: 500;
+    padding: 1rem 4rem;
+    color: var(--desaturated-blue);
+}
+
+.plan-botao {
+    margin: 0 3rem;
+}
+
+.plan{    
+    background-color: var(--very-pale-blue);    
+    border-radius: 10px;
+    padding: 1.3rem 0;
+    width: 100%;
+}
+
+.plan .plan-icone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan img{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.plan .plan-annual{
+    font-weight: 700;
+}
+
+.plan .plan-valor{
+    margin-top: 0.3rem;
+    color: var(--desaturated-blue);
+}
+
+.plan .plan-change{
+    padding-right: 1rem;
+    padding-left: 5rem;
+}
+
+.plan-change > a:hover {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--brightest-blue);
+}
+
+.botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.botao-payment{
+    background: var(--bright-blue);
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: bold;
+    padding: 1rem 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 10px 25px var(--brightest-blue);
+    transition: 400ms;
+}
+
+.botao-payment:hover{
+    background-color: var(--brightest-blue);
+}
+
+
+.botao-payment:hover, .botao-cancel:hover{
+    cursor: pointer;
+}
+
+.botao-cancel{
+    background: var(--white);
+    border: none;
+    color: var(--desaturated-blue);
+    font-weight: bold;
+    padding: 0;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.botao-cancel:hover {
+    color: black;
+    font-weight: 900;
+}
+
+
+@media screen and (max-width: 450px) {
+    * {
+        font-size: 14px;
+    }
+
+    .texto > h1 {
+        font-size: 22px;
+        margin-top: 25px;
+    }
+
+    .flex-container {    
+        width: 330px;
+        
+    }
+
+    .texto p {
+        padding: 1rem 2.5rem;
+        line-height: 1.8rem;
+        font-size: 15px;
+    }
+
+    .plan-botao {
+        margin: 0 2rem;
+    }
+
+    .plan img{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .plan .plan-change{
+        padding-right: 1rem;
+        padding-left: 3.5rem;
+    }
+
+    .botao-payment {
+        width: 100%;
+        padding: 1.2rem 1rem;
+        box-shadow: 0px 5px 25px var(--brightest-blue);
+    }
+
+    .botao-cancel {
+        padding: 0;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+
+    
+}
