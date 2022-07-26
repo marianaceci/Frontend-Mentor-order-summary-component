@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/marianaceci/Frontend-Mentor-order-summary-component](https://github.com/marianaceci/Frontend-Mentor-order-summary-component)
-- Live Site URL: []()
+- Live Site URL: [https://marianaceci.github.io/Frontend-Mentor-order-summary-component/](https://marianaceci.github.io/Frontend-Mentor-order-summary-component/)
 
 ## My process
 
